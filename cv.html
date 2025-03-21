@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum Vitae</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    nav {
+      background: #222;
+      padding: 1em;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 2em;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+    h1, h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.3em;
+      margin-top: 1.5em;
+      animation: fadeInUp 1.4s ease-in-out;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    ul li {
+      margin: 0.5em 0;
+      animation: fadeIn 1.6s ease-in;
+    }
+    p {
+      animation: fadeIn 1.6s ease-in;
+    }
+    footer {
+      text-align: center;
+      padding: 2em 0;
+      background: #222;
+      color: #fff;
+      margin-top: 2em;
+      animation: fadeIn 2s ease-in;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="cv.html">CV</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <h1>Curriculum Vitae</h1>
+
+  <h2>Education</h2>
+  <ul>
+    <li>PhD in Computer Science – Swansea University, UK (2017–2021)</li>
+    <li>MSc in Advanced Computer Science (Distinction) – Swansea University, UK (2015–2016)</li>
+    <li>BSc in Computer Sciences – University of Jordan (2009–2014)</li>
+  </ul>
+
+  <h2>Experience</h2>
+  <ul>
+    <li><strong>Computer Vision Engineer (2025)</strong> – Andrew Jackson Architects Ltd., Manchester, UK</li>
+    <li><strong>Computer Vision Engineer & KTP Associate (2022–2025)</strong> – Moa Technology Ltd. & Loughborough University</li>
+    <li><strong>Lecturing & Supervision (2023–2024)</strong> – Dept. of Computer Science, Loughborough University</li>
+    <li><strong>Teaching Assistant (2019)</strong> – Dept. of Computer Science, Swansea University</li>
+  </ul>
+
+  <h2>Expertise & Focus Areas</h2>
+  <p>Computer Vision, Machine Learning, Deep Learning, Generative AI, Vision-Language Models, 3D Image Analysis, Multimodal Learning, Semi/Weak Supervision, Medical Imaging, Scientific Applications.</p>
+
+  <h2>Awards</h2>
+  <ul>
+    <li>Best Paper Award – International Conference on Pattern Recognition Applications and Methods (ICPRAM), 2021</li>
+  </ul>
+
+  <h2>Professional Development</h2>
+  <ul>
+    <li>Management & Leadership Certification (Level 5) – Ashorne Hill / UKRI (2023)</li>
+    <li>Certified Jetson Pro Course – Augmented Startups</li>
+    <li>Personal Impact & Influence Training – National Theatre, London (2024)</li>
+    <li>Session Chair – VISAPP 2025, Porto, Portugal</li>
+    <li>VAAH Series – Loughborough University (2024)</li>
+  </ul>
+
+  <h2>Skills</h2>
+  <ul>
+    <li>Python, R, C++, PyTorch, TensorFlow, Hugging Face, Scikit-Learn, OpenCV</li>
+    <li>Git, Docker, Anaconda, HPC, GCP, Edge Deployment (Jetson, Raspberry Pi)</li>
+    <li>GUI Development (PyQt, PySide), LaTeX, Windows/Linux</li>
+  </ul>
+</div>
+
+<footer>&copy; 2025 Majedaldein I. Almahasneh</footer>
+
+</body>
+</html>

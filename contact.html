@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    body {
+      margin: 0;
+      background: #f1f5f9;
+      color: #1e293b;
+      font-family: 'Inter', sans-serif;
+    }
+
+    nav {
+      background: #222;
+      padding: 1em;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      margin: 0 1.2em;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 3em auto;
+      padding: 2em;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+      animation: slideUp 1.2s ease;
+    }
+
+    h1 {
+      font-size: 2.4em;
+      font-weight: 600;
+      color: #0f172a;
+      text-align: center;
+      margin-bottom: 1.5em;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .contact-section img {
+      width: 150px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .contact-details {
+      flex: 1;
+      min-width: 280px;
+      animation: fadeInUp 1.4s ease;
+    }
+
+    .contact-details p {
+      font-size: 1em;
+      color: #334155;
+      line-height: 1.6;
+      margin-bottom: 1.5em;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      row-gap: 10px;
+      column-gap: 12px;
+      font-size: 0.95em;
+    }
+
+    .contact-grid a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .contact-grid a:hover {
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 20px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em 0;
+      background: #222;
+      color: #f1f5f9;
+      font-size: 0.9em;
+      margin-top: 3em;
+      animation: fadeIn 2s ease;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="cv.html">CV</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <h1>Contact</h1>
+
+  <div class="contact-section">
+    <img src="profile.jpg" alt="Dr. Majedaldein I. Almahasneh" />
+
+    <div class="contact-details">
+      <p>
+        Whether you're reaching out for collaboration, academic inquiries, or professional engagement, I welcome thoughtful connections.
+      </p>
+
+      <div class="contact-grid">
+        <div><strong>LinkedIn:</strong></div>
+        <div><a href="https://www.linkedin.com/in/majedaldein-almahasneh-92b7b397/" target="_blank">linkedin.com/majedaldein</a></div>
+
+        <div><strong>GitHub:</strong></div>
+        <div><a href="https://github.com/MjdMahasneh" target="_blank">github.com/MjdMahasneh</a></div>
+      </div>
+
+      <a href="mailto:mjdmahasneh@live.com" class="button">Send a Message</a>
+    </div>
+  </div>
+</div>
+
+<footer>&copy; 2025 Majedaldein I. Almahasneh</footer>
+
+</body>
+</html>

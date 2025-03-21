@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    nav {
+      background: #222;
+      padding: 1em;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 2em;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      text-align: justify;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+    h1, h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.3em;
+      margin-top: 1.5em;
+      animation: fadeInUp 1.4s ease-in-out;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    ul li {
+      margin: 0.8em 0;
+      animation: fadeIn 1.6s ease-in;
+    }
+    footer {
+      text-align: center;
+      padding: 2em 0;
+      background: #222;
+      color: #fff;
+      margin-top: 2em;
+      animation: fadeIn 2s ease-in;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="cv.html">CV</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <h1>Research Interests</h1>
+  <p>
+    My research spans machine learning and deep learning, with a focus on computer vision and image processing. This includes object detection, segmentation, tracking, pattern recognition, pose and depth estimation, and motion capture. I work with neural networks and attention mechanisms like CNNs, transformers (ViTs), convolutional attention, and models using cross-feature dependencies. I’m also interested in semi- and weakly-supervised learning approaches.
+
+    I explore vision-language models and generative AI (VLMs, LLMs), and work with 3D and multimodal data—such as LiDAR, point clouds, volumetric imaging, and temporal data. Much of my work is applied in scientific and real-world contexts, including medical imaging, microscopy, diagnostic systems, anomaly detection, surveillance, and OCR.
+  </p>
+
+  <h2>Publications</h2>
+  <ul>
+    <li><strong>Solar Active Regions Localization over Multi-Spectral Observations</strong> – Machine Learning in Heliophysics, 2019</li>
+    <li><strong>MLMT-CNN for Object Detection and Segmentation in Multi-Layer and Multi-Spectral Images</strong> – Machine Vision and Applications, 2021</li>
+    <li><strong>Active Region Detection in Multi-Spectral Solar Images</strong> – ICPRAM, 2021</li>
+    <li><strong>MSMT-CNN for Solar Active Region Detection with Multi-Spectral Analysis</strong> – Springer Nature Computer Science, 2022</li>
+    <li><strong>Localization in 3D Images Using Cross-Feature Correlation Learning</strong> – Doctoral Thesis, Swansea University, 2022</li>
+    <li><strong>Herbicide Efficacy Prediction Based on Object Segmentation of Glasshouse Imagery</strong> – VISAPP, 2025</li>
+    <li><strong>AttentNet for Pulmonary Lung Nodule Detection Using 3D Convolutional Attention and 3D Vision Transformer Networks</strong> – Springer Nature Computer Science, 2025</li>
+    <li><strong>Deep Learning-Based Herbicide Activity Prediction Using Object Localization and Contrastive Analysis</strong> – Springer Computer Science (submitted), 2025</li>
+  </ul>
+</div>
+
+<footer>&copy; 2025 Majedaldein I. Almahasneh</footer>
+
+</body>
+</html>

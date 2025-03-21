@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    nav {
+      background: #222;
+      padding: 1em;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2em auto;
+      padding: 2em;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+    .intro-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+    }
+    .intro-section img {
+      width: 160px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease-in;
+    }
+    .intro-text {
+      flex: 1;
+      min-width: 260px;
+      text-align: justify;
+      animation: fadeInUp 1.4s ease-in;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    footer {
+      text-align: center;
+      padding: 2em 0;
+      background: #222;
+      color: #fff;
+      margin-top: 2em;
+      animation: fadeIn 2s ease-in;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="cv.html">CV</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <div class="intro-section">
+    <img src="profile.jpg" alt="Dr. Majedaldein I. Almahasneh" />
+    
+    <div class="intro-text">
+      <h1>Dr. Majedaldein I. Almahasneh</h1>
+      <p>
+        I'm a researcher and engineer working in computer vision and AI, with a background in machine learning, deep learning, and scientific image analysis. I earned my PhD in Computer Science from Swansea University, where I developed new approaches for 3D image localisation using cross-feature correlation learning. My work brings together theory and application, aiming to connect advanced research with practical use.
+      </p>
+
+      <p>
+        My expertise covers 2D/3D image analysis, vision-language models, generative AI, and multimodal data processing. I've helped develop neural architectures like convolutional attention networks and 3D vision transformers, used in medical imaging, microscopy, solar physics, remote sensing, and diagnostic systems. I’m especially interested in cross-modal learning, attention mechanisms, semi-supervised approaches, and large models like LLMs and VLMs. I also work on point cloud analysis and 3D perception in real-world data.
+      </p>
+
+      <p>
+        I've published in peer-reviewed journals and international conferences, and received a Best Paper Award for work on multi-spectral solar image analysis. I contribute to open-source tools, mentor postgraduate researchers, and stay active through speaking, teaching, and collaboration. My focus is on building scalable, reliable AI systems that support science and discovery.
+      </p>
+
+      <p>
+        On the industry side, I’ve worked with a leading scientific research group in Oxford, helping integrate AI into their workflows. I’ve also contributed to a UKRI-funded programme, delivering applied deep learning research and supporting the transfer of academic AI methods into real-world applications.
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer>&copy; 2025 Majedaldein I. Almahasneh</footer>
+
+</body>
+</html>
